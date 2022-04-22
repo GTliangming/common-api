@@ -7,7 +7,7 @@ import java.util.List;
 @Data
 public class Page<T>{
     private Integer limit;
-    private Integer offser;
+    private Integer offset;
     private Integer total;
     private List<T> data;
 }

@@ -2,7 +2,7 @@ package com.example.template.controller;
 
 
 import com.example.template.mapper.UserMapper;
-import com.example.template.model.User;
+import com.example.template.entity.User;
 import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;

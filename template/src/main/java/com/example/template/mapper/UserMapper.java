@@ -1,6 +1,6 @@
 package com.example.template.mapper;
 
-import com.example.template.model.User;
+import com.example.template.entity.User;
 import org.apache.ibatis.annotations.Delete;
 import org.apache.ibatis.annotations.Select;
 import org.apache.ibatis.annotations.Update;

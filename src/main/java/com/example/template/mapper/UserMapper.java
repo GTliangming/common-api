@@ -1,6 +1,7 @@
 package com.example.template.mapper;
 
-import com.example.template.model.User;
+import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import com.example.template.entity.User;
 import org.apache.ibatis.annotations.Delete;
 import org.apache.ibatis.annotations.Select;
 import org.apache.ibatis.annotations.Update;
@@ -8,7 +9,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 
-public interface UserMapper {
+public interface UserMapper extends BaseMapper<User> {
 
     @Select("select * from user")
     @Transactional
@@ -19,9 +20,9 @@ public interface UserMapper {
     @Transactional
     void save(User user);
 
-    @Update("update user set name=#{name},age=#{age},email=#{email} where id=#{id}")
-    @Transactional
-    void updateById(User user);
+//    @Update("update user set name=#{name},age=#{age},email=#{email} where id=#{id}")
+//    @Transactional
+//    void updateById(User user);
 
     @Delete("delete from  user where id=#{id}")
     @Transactional

@@ -2,7 +2,7 @@ package com.example.template.controller;
 
 
 import com.example.template.mapper.UserMapper;
-import com.example.template.model.User;
+import com.example.template.entity.User;
 import com.example.template.types.Page;
 import org.springframework.web.bind.annotation.*;
 
@@ -57,7 +57,7 @@ public class UserController {
         Integer total = userMapper.getCount();
         page.setTotal(total);
         page.setLimit(limit);
-        page.setOffser(offset);
+        page.setOffset(offset);
         return page;
     }
 }
