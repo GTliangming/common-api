@@ -4,7 +4,6 @@ package com.example.template.controller;
 import cn.hutool.core.io.FileUtil;
 import cn.hutool.core.util.IdUtil;
 import cn.hutool.core.util.StrUtil;
-import cn.hutool.http.server.HttpServerResponse;
 import com.example.template.common.Result;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.*;
@@ -79,7 +78,5 @@ public class FileController {
         }catch (Exception e){
             System.out.println("文件下载失败！");
         }
-
-
     }
 }
