@@ -5,6 +5,9 @@ import org.apache.ibatis.reflection.MetaObject;
 import org.springframework.stereotype.Component;
 
 import java.util.Date;
+/**
+ * mybatis-plus 自动填充配置
+ */
 
 @Slf4j
 @Component
