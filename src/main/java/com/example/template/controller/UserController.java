@@ -7,6 +7,7 @@ import com.baomidou.mybatisplus.core.toolkit.StringUtils;
 import com.baomidou.mybatisplus.core.toolkit.Wrappers;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.example.template.common.Result;
+import com.example.template.common.TokenUtils;
 import com.example.template.mapper.UserMapper;
 import com.example.template.entity.User;
 import org.springframework.web.bind.annotation.*;
@@ -35,7 +36,7 @@ public class UserController {
         }
         Page<User> user=userMapper.selectPage(
                 new Page<>(pageNum,pageSize), wrapper);
-
+        System.out.print(user);
         return  Result.success(user);
     }
 
@@ -45,7 +46,10 @@ public class UserController {
         return Result.success();
     }
 
-
+    @GetMapping("/list")
+    public String getUserList(){
+        return  "1";
+    }
 
 
 
@@ -61,7 +65,8 @@ public class UserController {
         if (user == null){
             return  Result.error("-1","用户名或密码错误");
         }
-        return  Result.success();
+        String token = TokenUtils.getToken(user.getId().toString(),user.getPassword());
+        return  Result.successByToken(user,token);
     }
 
 
@@ -80,6 +85,8 @@ public class UserController {
             userParam.setPassword("123456");
         }
         userMapper.insert(userParam);
-        return Result.success();
+        User newUser = userMapper.selectOne(queryWrapper);
+        String token = TokenUtils.getToken(newUser.getId().toString(),newUser.getPassword());
+        return Result.successByToken(newUser,token);
     }
 }

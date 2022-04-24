@@ -36,6 +36,7 @@ public class FileController {
      */
     @PostMapping("/upload")
     public Result<?> upload(MultipartFile file) throws IOException {
+        System.out.print("upload----------");
         //获取文件原始名
         String originFilename = file.getOriginalFilename();
         // 获取文件类型

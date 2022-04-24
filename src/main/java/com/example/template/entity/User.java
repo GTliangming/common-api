@@ -36,7 +36,7 @@ public class User {
     private  Date updateTime;
 
 
-//    // 定义一个字段 标识他是一个数据库内不存在的字段
+    // 定义一个字段 标识他是一个数据库内不存在的字段
 //    @TableField(exist = false)
-//    private List<User> children;
+//    private String token;
 }

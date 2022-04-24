@@ -1,9 +1,0 @@
-/Users/lm/Desktop/spring-boot+antd-pro+react后台管理项目/common-api/src/main/java/com/example/template/TemplateApplication.java
-/Users/lm/Desktop/spring-boot+antd-pro+react后台管理项目/common-api/src/main/java/com/example/template/entity/User.java
-/Users/lm/Desktop/spring-boot+antd-pro+react后台管理项目/common-api/src/main/java/com/example/template/handler/MyMetaObjectHandler.java
-/Users/lm/Desktop/spring-boot+antd-pro+react后台管理项目/common-api/src/main/java/com/example/template/mapper/UserMapper.java
-/Users/lm/Desktop/spring-boot+antd-pro+react后台管理项目/common-api/src/main/java/com/example/template/common/config/CorsConfig.java
-/Users/lm/Desktop/spring-boot+antd-pro+react后台管理项目/common-api/src/main/java/com/example/template/controller/FileController.java
-/Users/lm/Desktop/spring-boot+antd-pro+react后台管理项目/common-api/src/main/java/com/example/template/controller/UserController.java
-/Users/lm/Desktop/spring-boot+antd-pro+react后台管理项目/common-api/src/main/java/com/example/template/common/Result.java
-/Users/lm/Desktop/spring-boot+antd-pro+react后台管理项目/common-api/src/main/java/com/example/template/common/config/MybatisPlusConfig.java
