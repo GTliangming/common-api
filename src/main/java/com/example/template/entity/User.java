@@ -4,6 +4,7 @@ import com.baomidou.mybatisplus.annotation.*;
 import lombok.Data;
 
 import java.util.Date;
+import java.util.List;
 
 @Data
 @TableName("user")
@@ -33,4 +34,9 @@ public class User {
     private  Date createTime;
     @TableField(fill = FieldFill.INSERT_UPDATE)
     private  Date updateTime;
+
+
+//    // 定义一个字段 标识他是一个数据库内不存在的字段
+//    @TableField(exist = false)
+//    private List<User> children;
 }
