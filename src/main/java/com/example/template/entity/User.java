@@ -1,14 +1,13 @@
 package com.example.template.entity;
 
-import com.baomidou.mybatisplus.annotation.FieldFill;
-import com.baomidou.mybatisplus.annotation.IdType;
-import com.baomidou.mybatisplus.annotation.TableField;
-import com.baomidou.mybatisplus.annotation.TableId;
+import com.baomidou.mybatisplus.annotation.*;
 import lombok.Data;
 
 import java.util.Date;
+import java.util.List;
 
 @Data
+@TableName("user")
 public class User {
     /**
      * IdType 类型含义
@@ -21,9 +20,12 @@ public class User {
      */
     @TableId(type = IdType.AUTO)
     private  Long id;
-    private  String name;
+    private  String username;
+    private  String password;
+    private  String nickname;
     private  Integer age;
-    private  String email;
+    private  String sex;
+    private  String address;
 
     /**
      *添加自动填充的注解
@@ -32,4 +34,9 @@ public class User {
     private  Date createTime;
     @TableField(fill = FieldFill.INSERT_UPDATE)
     private  Date updateTime;
+
+
+    // 定义一个字段 标识他是一个数据库内不存在的字段
+//    @TableField(exist = false)
+//    private String token;
 }
