@@ -25,7 +25,9 @@ public class FileController {
     @Value("${server.port}")
     private String port;
 
-    private static final String ip = "http://localhost";
+    @Value("${file.ip}")
+    private String ip;
+
     /**
      * 上传文件
      * @param file

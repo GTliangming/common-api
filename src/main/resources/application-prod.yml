@@ -13,4 +13,4 @@ mybatis-plus:
     log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
 
 file:
-  ip : localhost
+  ip : 150.158.167.162

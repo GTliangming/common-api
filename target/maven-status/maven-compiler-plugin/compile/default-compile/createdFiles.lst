@@ -1,0 +1,9 @@
+com/example/template/controller/UserController.class
+com/example/template/handler/MyMetaObjectHandler.class
+com/example/template/entity/User.class
+com/example/template/common/config/CorsConfig.class
+com/example/template/common/Result.class
+com/example/template/common/config/MybatisPlusConfig.class
+com/example/template/TemplateApplication.class
+com/example/template/mapper/UserMapper.class
+com/example/template/controller/FileController.class
